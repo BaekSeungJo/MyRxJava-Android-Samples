@@ -39,10 +39,25 @@ public class MainFragment extends BaseFragment {
 
     @OnClick(R.id.btn_demo_schedulers)
     void demoConcurrencyWithSchedulers() {
-        clickOn(new ConcurrencyWithSchedulersDemoFragment());
+        clickedOn(new ConcurrencyWithSchedulersDemoFragment());
     }
 
-    private void clickOn(@NonNull Fragment fragment) {
+    @OnClick(R.id.btn_demo_buffer)
+    void demoBuffer() {
+        clickedOn(new BufferDemoFragment());
+    }
+
+    @OnClick(R.id.btn_demo_debounce)
+    void demoThrottling() {
+        clickedOn(new DebounceSearchEmitterFragment());
+    }
+
+    @OnClick(R.id.btn_demo_retrofit)
+    void demoRetrofitCalls() {
+        clickedOn(new RetrofitFragment());
+    }
+
+    private void clickedOn(@NonNull Fragment fragment) {
         final String tag = fragment.getClass().getName();
         getActivity()
                 .getSupportFragmentManager()

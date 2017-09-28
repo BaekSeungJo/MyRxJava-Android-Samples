@@ -2,6 +2,8 @@ package com.morihacky.android.rxjava;
 
 import android.app.Application;
 
+import timber.log.Timber;
+
 /**
  * Created by 1 on 2017-09-22.
  */
@@ -28,5 +30,6 @@ public class App extends Application {
         super.onCreate();
 
         sInstance = (App) getApplicationContext();
+        Timber.plant(new Timber.DebugTree());
     }
 }

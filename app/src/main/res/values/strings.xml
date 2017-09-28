@@ -4,7 +4,7 @@
     <string name="app_name">Android-RxJava</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="github_oauth_token"><!-- InsertYouroAuthTokenHere --></string>
+    <string name="github_oauth_token">69c1c17dae3f974a50498c43de9f0a3af50054d7</string>
 
     <string name="btn_demo_schedulers">bg work (schedulers &amp; concurrency)</string>
     <string name="btn_demo_buffer">accumulate calls (buffer)</string>
