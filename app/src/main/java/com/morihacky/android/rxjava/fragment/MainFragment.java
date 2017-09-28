@@ -57,6 +57,11 @@ public class MainFragment extends BaseFragment {
         clickedOn(new RetrofitFragment());
     }
 
+    @OnClick(R.id.btn_demo_double_binding_textview)
+    void demoDoubleBindingWithPublishSubject() {
+        clickedOn(new DoubleBindingTextViewFragment());
+    }
+
     private void clickedOn(@NonNull Fragment fragment) {
         final String tag = fragment.getClass().getName();
         getActivity()
